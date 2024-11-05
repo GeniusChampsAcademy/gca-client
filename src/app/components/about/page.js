@@ -25,10 +25,12 @@ export default function About() {
           <div className="mt-10 md:mt-0 w-full lg:w-[50%] mx-auto">
             <div className="text-[#4F4D74] flex flex-col gap-8 lg:gap-12">
               <div className="flex flex-row md:flex-row gap-5 items-center">
-                <img
+                <Image
                   src="assets/images/about-start-img.svg"
                   alt="about image"
                   className="w-16 h-16 md:w-20 md:h-20"
+                  width={500}
+                  height={500}
                 />
                 <p className="text-left md:text-left">
                   India Book <br /> of Record Company
@@ -51,34 +53,42 @@ export default function About() {
 
               <div className="grid grid-cols-2 gap-7 text-sm lg:text-base">
                 <div className="flex gap-4 md:gap-6">
-                  <img
+                  <Image
                     src="assets/images/about-marker.svg"
                     className="w-6 h-6 md:w-7 md:h-7"
                     alt="about marker"
+                    width={500}
+                    height={500}
                   />
                   <p>Qualified Instructor</p>
                 </div>
                 <div className="flex gap-4 md:gap-6">
-                  <img
+                  <Image
                     src="assets/images/about-marker.svg"
                     className="w-6 h-6 md:w-7 md:h-7"
                     alt="about marker"
+                    width={500}
+                    height={500}
                   />
                   <p>Franchise Option</p>
                 </div>
                 <div className="flex gap-4 md:gap-6">
-                  <img
+                  <Image
                     src="assets/images/about-marker.svg"
                     className="w-6 h-6 md:w-7 md:h-7"
                     alt="about marker"
+                    width={500}
+                    height={500}
                   />
                   <p>Quality Education</p>
                 </div>
                 <div className="flex gap-4 md:gap-6">
-                  <img
+                  <Image
                     src="assets/images/about-marker.svg"
                     className="w-6 h-6 md:w-7 md:h-7"
                     alt="about marker"
+                    width={500}
+                    height={500}
                   />
                   <p>Women Empowerment</p>
                 </div>
