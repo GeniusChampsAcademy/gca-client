@@ -117,7 +117,7 @@ export default function Footer() {
               <p>+91 9423631238</p>
             </Link>
             <Link href="mailto:geniuschampsacademy@gmail.com">
-              <p>geniuschampsacademy@gmail.com</p>
+              <p className="text-wrap">geniuschampsacademy@gmail.com</p>
             </Link>
           </div>
         </div>

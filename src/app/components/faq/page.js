@@ -18,7 +18,7 @@ const Faq = () => {
     <section className="max-w-[92vw] lg:max-w-[55vw] mx-auto mt-10 mb-0">
       <div className="text-center text-[#4F4D74] mb-10">
         <h2 className="text-4xl lg:text-5xl">FAQ</h2>
-        <p className="text-lg md:text-lg lg:text-lg">
+        <p className="md:text-lg lg:text-lg">
           Feeling a little lost? No worries – we've got your back! Here's the
           lowdown on all your burning questions, so buckle up for some seriously
           cool info!

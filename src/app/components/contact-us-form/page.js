@@ -69,9 +69,9 @@ export default function ContactUsForm() {
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-medium text-gray-700 "
+            className="block font-medium"
           >
-            Name <span className="star">*</span>
+            Name<span className="star">*</span>
           </label>
           <input
             type="text"
@@ -87,7 +87,7 @@ export default function ContactUsForm() {
 
         {/* Contact Number Field */}
         <div>
-          <label htmlFor="contact" className="block text-sm font-medium">
+          <label htmlFor="contact" className="block font-medium">
             Contact Number<span className="star">*</span>
           </label>
           <input
@@ -112,7 +112,7 @@ export default function ContactUsForm() {
 
         {/* Email Field */}
         <div>
-          <label htmlFor="email" className="block text-sm font-medium">
+          <label htmlFor="email" className="block font-medium">
             Email<span className="star">*</span>
           </label>
           <input
@@ -137,7 +137,7 @@ export default function ContactUsForm() {
         <div ref={dropdownRef} className="relative">
           <label
             htmlFor="service"
-            className="block text-sm font-medium text-gray-700 service"
+            className="block font-medium service"
           >
             Service<span className="star">*</span>
           </label>
@@ -197,7 +197,7 @@ export default function ContactUsForm() {
 
         {/* Message Field (optional) */}
         <div>
-          <label htmlFor="message" className="block text-sm font-medium">
+          <label htmlFor="message" className="block font-medium">
             Message
           </label>
           <textarea
