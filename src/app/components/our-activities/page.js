@@ -23,6 +23,14 @@ const galleryImages = [
   "/assets/gcs-images/student-group-pic14.JPG",
   "/assets/gcs-images/student-group-pic15.JPG",
   "/assets/gcs-images/student-group-pic16.JPG",
+  "/assets/gcs-images/student-group-pic17.JPG",
+  "/assets/gcs-images/student-group-pic18.JPG",
+  "/assets/gcs-images/student-group-pic19.JPG",
+  "/assets/gcs-images/student-group-pic20.JPG",
+  "/assets/gcs-images/student-group-pic21.JPG",
+  "/assets/gcs-images/student-group-pic22.JPG",
+  "/assets/gcs-images/student-group-pic23.JPG",
+  "/assets/gcs-images/student-group-pic24.JPG",
 ];
 
 const shuffleArray = (array) => {
