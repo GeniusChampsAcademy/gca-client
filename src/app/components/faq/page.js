@@ -18,7 +18,7 @@ const Faq = () => {
     <section className="max-w-[92vw] lg:max-w-[55vw] mx-auto mt-10 mb-0">
       <div className="text-center text-[#4F4D74] mb-10">
         <h2 className="text-4xl lg:text-5xl">FAQ</h2>
-        <p className="text-sm md:text-base lg:text-lg">
+        <p className="text-lg md:text-lg lg:text-lg">
           Feeling a little lost? No worries – we've got your back! Here's the
           lowdown on all your burning questions, so buckle up for some seriously
           cool info!
@@ -38,11 +38,11 @@ const Faq = () => {
               <h3 className="font-medium ml-10">{item.question}</h3>
 
               {/* Container for the Rectangle and Vector images */}
-              <span className="relative w-8 h-auto mr-3">
+              <span className="relative w-[45px] h-auto rounded-full mr-3">
                 <Image
                   src="../assets/images/star.svg"
                   alt="Rectangle"
-                  className="w-[96px] h-auto bg-white rounded-full p-2"
+                  className="w-[36px] h-auto bg-white rounded-full p-2"
                   width={500}
                   height={500}
                 />
