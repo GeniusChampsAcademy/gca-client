@@ -42,7 +42,7 @@ const Faq = () => {
                 <Image
                   src="../assets/images/star.svg"
                   alt="Rectangle"
-                  className="w-24 h-auto bg-white rounded-full p-2"
+                  className="w-[96px] h-auto bg-white rounded-full p-2"
                   width={500}
                   height={500}
                 />
@@ -87,28 +87,28 @@ const faqData = [
       "Yes, we provide comprehensive support for franchisees interested in starting their own classes.",
   },
   {
-    question: "How can I join your team as a teacher?",
+    question: "How can I join as a teacher?",
     answer: "Book a Demo Session and send us your qualifications details.",
   },
-  {
-    question: "What sets Genius Champs Academy apart?",
-    answer:
-      "We prioritize personalized learning, innovative teaching methods, and a supportive environment.",
-  },
-  {
-    question: "How can I contact customer support?",
-    answer: "Reach us via phone, email, or our website's contact form.",
-  },
-  {
-    question: "Are both online and offline courses available?",
-    answer:
-      "Yes! Choose between virtual or in-person classes based on your preference and schedule.",
-  },
-  {
-    question: "Do you have any secret tips for becoming a super smart kid?",
-    answer:
-      "Oh, we've got plenty! Our courses are full of secrets and surprises that will make you feel like a genius in no time.",
-  },
+  // {
+  //   question: "What sets Genius Champs Academy apart?",
+  //   answer:
+  //     "We prioritize personalized learning, innovative teaching methods, and a supportive environment.",
+  // },
+  // {
+  //   question: "How can I contact customer support?",
+  //   answer: "Reach us via phone, email, or our website's contact form.",
+  // },
+  // {
+  //   question: "Are both online and offline courses available?",
+  //   answer:
+  //     "Yes! Choose between virtual or in-person classes based on your preference and schedule.",
+  // },
+  // {
+  //   question: "Do you have any secret tips for becoming a super smart kid?",
+  //   answer:
+  //     "Oh, we've got plenty! Our courses are full of secrets and surprises that will make you feel like a genius in no time.",
+  // },
   {
     question: "How do I snag a spot in the fun zone?",
     answer:
