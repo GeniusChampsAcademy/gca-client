@@ -53,7 +53,7 @@ export default function Reviews() {
       avatar: "/assets/images/boy-avatar.svg",
       stars: "/assets/images/stars.svg",
       review:
-        "Fantastic experience! The teachers are very supportive and make learning enjoyable. I feel more confident in my studies now.",
+        "Fantastic experience! The teachers are very very supportive and make learning enjoyable. I feel more confident about my studies now.",
     },
     {
       name: "Yash Bhale",
