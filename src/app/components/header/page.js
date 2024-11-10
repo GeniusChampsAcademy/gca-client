@@ -54,7 +54,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex gap-12 sm:gap-40 text-[#4F4D74] items-center w-full p-4 lg:px-20 justify-between lg:justify-center">
+    <header className="flex gap-12 sm:gap-40 fixed bg-white z-50 text-[#4F4D74] items-center w-full p-4 lg:px-20 justify-between lg:justify-center">
       <div className="flex items-center gap-4">
         <Link href="/">
           <Image
