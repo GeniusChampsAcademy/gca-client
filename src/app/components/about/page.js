@@ -7,22 +7,23 @@ export default function About() {
   return (
     <div>
       <div
-        className="min-h-[96vh] bg-no-repeat flex md:pb-[5rem] bg-center mt-16"
+        className="min-h-[130vh] bg-no-repeat flex md:pb-[5rem] bg-center mt-16"
         style={{
           backgroundImage: "url('/assets/images/about-background.svg')",
         }}
       >
         <div className="container flex flex-col lg:flex-row gap-4 sm:gap-16 lg:gap-11 mt-10 md:mt-16 p-4">
-          <div className="w-full lg:w-[50%] flex justify-center mx-auto">
+          <div className="w-full lg:w-[50%] flex justify-center mx-auto items-center">
             <Image
               src="/assets/images/about.png"
               alt="about image"
-              className="max-h-[40em] md:max-h-[40em] object-cover"
+              className="w-full h-auto max-w-[400px] max-h-[550px] object-cover" // Adjust the max width and height here
               width={450}
               height={900}
             />
           </div>
-          <div className="mt-10 md:mt-0 w-full lg:w-[50%] mx-auto">
+
+          <div className="mt-10 md:mt-0 w-full lg:w-[50%] mx-auto flex items-center">
             <div className="text-[#4F4D74] flex flex-col gap-8 lg:gap-12">
               <div className="flex flex-row md:flex-row gap-5 items-center">
                 <Image
