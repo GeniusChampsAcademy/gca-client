@@ -61,7 +61,7 @@ export default function JoinUsNow() {
                     Give Exam
                   </Link>
                 </button>
-                <div className="w-[30rem] h-auto relative hidden md:block -z-0 -top-44 xl:-top-36">
+                <div className="w-[30rem] h-auto relative hidden md:block -z-0 -top-44 md:-top-16 xl:-top-36">
                   <Image
                     src="assets/images/tiger-on-bench.svg"
                     alt="exam portal tiger"
