@@ -16,7 +16,7 @@ export default function Hero() {
 
       {/* Hero Section Background */}
       <div
-        className="hero-section relative bg-center bg-contain bg-no-repeat mt-52 sm:mt-28 md:mt-32 
+        className="hero-section relative bg-center bg-contain bg-no-repeat mt-52 sm:mt-28 md:mt-14   
                    h-[20rem] w-full 
                    sm:h-[40rem] sm:w-[40rem]
                    lg:min-h-[50rem] lg:min-w-[50rem]"

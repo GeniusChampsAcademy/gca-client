@@ -1,9 +1,17 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import Link from "next/link"; // Import Link from Next.js
 import "./footer.css";
 
 export default function Footer() {
+  const scrollToOurCourses = (e) => {
+    e.preventDefault(); // Prevents default link behavior
+    const ourCoursesSection = document.getElementById("our-courses");
+    if (ourCoursesSection) {
+      ourCoursesSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <footer className="mt-10">
       <div className="top-footer bg-[#6173FD] max-w-[100vw] mt-10 text-white">
@@ -29,7 +37,10 @@ export default function Footer() {
                   height={80}
                 />
               </Link>
-              <Link href="https://www.instagram.com/genius_champs_academy/" className="-mx-6">
+              <Link
+                href="https://www.instagram.com/genius_champs_academy/"
+                className="-mx-6"
+              >
                 <Image
                   src="/assets/images/instagram.svg"
                   alt="instagram"
@@ -37,7 +48,10 @@ export default function Footer() {
                   height={80}
                 />
               </Link>
-              <Link href="https://www.linkedin.com/company/genius-champs-academy" className="-me-6">
+              <Link
+                href="https://www.linkedin.com/company/genius-champs-academy"
+                className="-me-6"
+              >
                 <Image
                   src="/assets/images/linkedin.svg"
                   alt="linkedin"
@@ -59,59 +73,73 @@ export default function Footer() {
           <div className="footer-links">
             <ul className="flex flex-col md:flex-row gap-3 lg:gap-16">
               <li className="first-list-item">
-                <Link href="#">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="#">About Us</Link>
+                <Link href="/">About Us</Link>
               </li>
               <li>
-                <Link href="#">Courses</Link>
+                <Link
+                  href="#our-courses"
+                  onClick={(e) => {
+                    scrollToOurCourses(e);
+                  }}
+                >
+                  Our Courses
+                </Link>
               </li>
               <li>
-                <Link href="#">Exam Portal</Link>
+                <Link href="https://www.appadmin.geniuschampsacademy.com/gcaexam/examlogin.html">
+                  Exam Portal
+                </Link>
               </li>
               <li>
-                <Link href="#">Join Our Team</Link>
+                <Link href="/components/contact-us">Join Our Team</Link>
               </li>
-              
             </ul>
           </div>
 
           {/* social media links for mobile devices  */}
           <div className="social-media -ms-5 flex flex-row md:hidden ">
-              <Link href="https://www.facebook.com/geniuschampsacademy">
-                <Image
-                  src="/assets/images/facebook.svg"
-                  alt="facebook"
-                  width={80}
-                  height={80}
-                />
-              </Link>
-              <Link href="https://www.instagram.com/genius_champs_academy/" className="-mx-5">
-                <Image
-                  src="/assets/images/instagram.svg"
-                  alt="instagram"
-                  width={80}
-                  height={80}
-                />
-              </Link>
-              <Link href="https://www.linkedin.com/company/genius-champs-academy" className="-me-5">
-                <Image
-                  src="/assets/images/linkedin.svg"
-                  alt="linkedin"
-                  width={80}
-                  height={80}
-                />
-              </Link>
-              <Link href="https://youtube.com/@geniuschampsacademy">
-                <Image
-                  src="/assets/images/youtube.svg"
-                  alt="youtube"
-                  width={80}
-                  height={80}
-                />
-              </Link>
-            </div>
+            <Link href="https://www.facebook.com/geniuschampsacademy">
+              <Image
+                src="/assets/images/facebook.svg"
+                alt="facebook"
+                width={80}
+                height={80}
+              />
+            </Link>
+            <Link
+              href="https://www.instagram.com/genius_champs_academy/"
+              className="-mx-5"
+            >
+              <Image
+                src="/assets/images/instagram.svg"
+                alt="instagram"
+                width={80}
+                height={80}
+              />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/genius-champs-academy"
+              className="-me-5"
+            >
+              <Image
+                src="/assets/images/linkedin.svg"
+                alt="linkedin"
+                width={80}
+                height={80}
+              />
+            </Link>
+            <Link href="https://youtube.com/@geniuschampsacademy">
+              <Image
+                src="/assets/images/youtube.svg"
+                alt="youtube"
+                width={80}
+                height={80}
+              />
+            </Link>
+          </div>
 
           <div className="contact-data flex md:flex-row flex-col justify-end gap-2 md:gap-14 py-8 text-xs sm:text-base">
             <Link href="tel:9423631238">
