@@ -14,22 +14,22 @@ export default function OurCoursesDesktop() {
     {
       title: "Teacher Training",
       icon: "assets/images/teacher-training.svg",
-      description: `Transforms your brain into a lightning-fast calculator, making math a magical,mind-boosting superpower!`,
+      description: `Get certified with our Teacher Training Program, unlock endless opportunities, and inspire young minds—all from the comfort of your home. Take the first step toward a rewarding career in education!`,
     },
     {
       title: "Abacus",
       icon: "assets/images/abacus.svg",
-      description: `transforms your brain into a lightning-fast calculator, making math a magical,mind-boosting superpower!`,
+      description: `Transforms your brain into a lightning-fast calculator, making math a magical,mind-boosting superpower!`,
     },
     {
       title: "Mid Brain Activation",
       icon: "assets/images/mid-brain-activation.svg",
-      description: `transforms your brain into a lightning-fast calculator, making math a magical,mind-boosting superpower!`,
+      description: `Boosts focus, memory, and creativity in a fun, engaging way. Enhance your learning abilities, sharpen your intuition, and unlock skills you never knew you had.`,
     },
     {
       title: "Hand Writing",
       icon: "assets/images/hand-writing.svg",
-      description: `transforms your brain into a lightning-fast calculator, making math a magical,mind-boosting superpower!`,
+      description: `Makes writing fun, easy, and impressive. From learning the basics to perfecting your style, this course will help you transform your handwriting and make every word you write stand out.`,
     },
   ];
 
@@ -57,7 +57,7 @@ export default function OurCoursesDesktop() {
   return (
     <div
       id="our-courses"
-      className="container min-h-[40vw] mx-auto pb-10 hidden lg:block justify-center text-[#4F4D74]"
+      className="container min-h-[45vw] mx-auto pb-10 hidden lg:block justify-center text-[#4F4D74]"
     >
       <Slider {...settings}>
         {courses.map((course, index) => (
@@ -70,7 +70,7 @@ export default function OurCoursesDesktop() {
             <Image
               src={course.icon}
               alt={course.title}
-              className=" -mb-10 w-44 mx-auto h-64 flex justify-center "
+              className=" -mb-10 w-44 mx-auto h-64 flex justify-center mt-5"
               width={500}
               height={500}
             />
@@ -80,18 +80,18 @@ export default function OurCoursesDesktop() {
             </p>
 
             {activeSlide === index && (
-              <>
+              <div className="mb-8">
                 <p className="text-xs text-center">{course.description}</p>
                 <button className="mt-4 px-4 py-1 text-xs bg-[#16C6EC] text-white rounded-full">
                   <Link href="/components/contact-us">KNOW MORE</Link>
                 </button>
-              </>
+              </div>
             )}
           </div>
         ))}
       </Slider>
 
-      <div className="flex flex-row justify-center gap-7 -mt-[25px] lx:-mt-[60px]">
+      <div className="flex flex-row justify-center gap-7 -mt-[5px] lg:-mt-[90px] xl:-mt-[1px]">
         {/* Left Arrow */}
         <button
           className="previous drop-shadow-2xl p-3 bg-white rounded-full"
