@@ -35,7 +35,7 @@ export default function Reviews() {
 
   const reviews = [
     {
-      name: "Tushar Alhat",
+      name: "Ravi Bhand",
       avatar: "/assets/images/boy-avatar.svg",
       stars: "/assets/images/stars.svg",
       review:
@@ -49,7 +49,7 @@ export default function Reviews() {
         "I improved my grades significantly thanks to this tuition center. The interactive sessions and practice tests really helped me stay ahead.",
     },
     {
-      name: "Mayur Bhor",
+      name: "Tushar Alhat",
       avatar: "/assets/images/boy-avatar.svg",
       stars: "/assets/images/stars.svg",
       review:
@@ -77,7 +77,7 @@ export default function Reviews() {
             key={index}
             className="flex flex-row items-center gap-6 w-full p-4"
           >
-            <div className="md:float-left w-36 h-36 bg-[#FFCD1A] rounded-full border-4 border-white flex-shrink-0 overflow-hidden mx-auto">
+            <div className="md:float-left w-36 h-36 bg-[#FFCD1A] rounded-full border-4 border-white flex-shrink-0 overflow-hidden mx-auto md:mx-0">
               <Image
                 src={review.avatar}
                 alt="avatar"
@@ -86,27 +86,26 @@ export default function Reviews() {
                 height={500}
               />
             </div>
-            <div className="flex flex-col flex-1 items-center">
-              {" "}
-              {/* Flex-1 for content */}
-              <div className="flex gap-4 items-center mx-auto">
+            <div className="flex flex-col flex-1 items-center justify-start md:ps-8">
+              <div className="flex flex-col text-sm leading-relaxed text-center mt-2 md:text-justify">
                 {" "}
-                {/* Reduced gap for better layout */}
-                <p className="text-xl font-semibold whitespace-nowrap">
-                  {review.name}
-                </p>
-                <Image
-                  src={review.stars}
-                  alt="stars"
-                  className="w-28"
-                  width={500}
-                  height={500}
-                />{" "}
-                {/* Reduced width for consistency */}
-              </div>
-              <p className="text-sm leading-relaxed text-center mt-2 sm:px-24">
+                {/* Flex-1 for content */}
+                <div className="flex flex-col float-start items-center md:items-start justify-center md:justify-start ">
+                  {" "}
+                  {/* Reduced gap for better layout */}
+                  <p className="text-xl font-semibold whitespace-nowrap">
+                    {review.name}
+                  </p>
+                  <Image
+                    src={review.stars}
+                    alt="stars"
+                    className="w-28"
+                    width={500}
+                    height={500}
+                  />{" "}
+                </div>
                 {review.review}
-              </p>
+              </div>
             </div>
           </div>
         ))}

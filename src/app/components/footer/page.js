@@ -73,6 +73,7 @@ export default function Footer() {
               <li>
                 <Link href="#">Join Our Team</Link>
               </li>
+              
             </ul>
           </div>
 
@@ -112,7 +113,7 @@ export default function Footer() {
               </Link>
             </div>
 
-          <div className="contact-data flex md:flex-row flex-col justify-end gap-2 md:gap-14 py-8">
+          <div className="contact-data flex md:flex-row flex-col justify-end gap-2 md:gap-14 py-8 text-xs sm:text-base">
             <Link href="tel:9423631238">
               <p>+91 9423631238</p>
             </Link>
