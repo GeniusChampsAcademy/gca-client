@@ -17,8 +17,8 @@ export default function DemoClass() {
           What are you looking for!
         </h1>
       </div>
-      <div className="flex flex-row items-center justify-between bg-[#EDD93C] max-w-[85vw] sm:max-w-[90vw] sm:min-w-[90vw] lg:min-w-[65vw] lg:max-w-[65vw] px-4 py-4 sm:px-12 sm:py-8 mt-6 rounded-3xl ">
-        <div className="w-[20rem]">
+      <div className="flex flex-row items-center justify-between bg-[#EDD93C] max-w-[85vw] sm:max-w-[90vw] sm:min-w-[90vw] lg:min-w-[80vw] lg:max-w-[80vw] px-4 py-4 sm:px-12 sm:py-8 mt-6 rounded-3xl ">
+        <div className="w-[27rem]">
           <Image
             src="/assets/images/say-hello.svg"
             width={500}
@@ -26,7 +26,7 @@ export default function DemoClass() {
             alt="Picture of the author"
           ></Image>
         </div>
-        <button className="w-[17rem]" onClick={scrollToContactUs}>
+        <button className="w-[23rem]" onClick={scrollToContactUs}>
             <Image
               src="/assets/images/book-free-demo-class.svg"
               width={500}
