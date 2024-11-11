@@ -131,9 +131,10 @@ export default function Header() {
 
         <button
           className={demoButtonStyle}
-          onClick={() => handleNavClick("Book Free Demo")}
-        >
+          // onClick={() => handleNavClick("Book Free Demo")}
+          >
           <Link href="/components/contact-us">BOOK FREE DEMO</Link>
+          
         </button>
       </nav>
 
