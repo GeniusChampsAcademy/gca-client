@@ -40,7 +40,7 @@ export default function ContactUsForm() {
     try {
       console.log(data);
       const response = await axios.post(
-        "https://server-tau-neon-96.vercel.app/api/contact/",
+        "https://gca-backend-xeyu.vercel.app/api/contact/",
         data
       );
       if (response.data.success) {
