@@ -13,11 +13,14 @@ export default function DemoClass() {
     <div className="flex justify-center flex-col items-center mt-6">
       <div className="text-center">
         <p className="text-xl text-[#A7B0B8]">Contact Us</p>
-        <h1 className="text-4xl lg:text-5xl text-[#4F4D74] px-6">
+        <h1 className="text-4xl lg:text-7xl text-[#4F4D74] px-6" style={{
+                    fontFamily: "Gilroy",
+                    fontWeight: 700, // bold
+                  }}>
           What are you looking for!
         </h1>
       </div>
-      <div className="flex flex-row items-center justify-between bg-[#EDD93C] max-w-[85vw] sm:max-w-[90vw] sm:min-w-[90vw] lg:min-w-[80vw] lg:max-w-[80vw] px-4 py-4 sm:px-12 sm:py-8 mt-6 rounded-3xl ">
+      <div className="flex flex-row items-center justify-between bg-[#EDD93C] max-w-[85vw] sm:max-w-[90vw] sm:min-w-[90vw] lg:min-w-[80vw] lg:max-w-[80vw] px-4 py-4 sm:px-12 sm:py-12 mt-6 rounded-3xl ">
         <div className="w-[27rem]">
           <Image
             src="/assets/images/say-hello.svg"

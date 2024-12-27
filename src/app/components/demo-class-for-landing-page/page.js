@@ -8,21 +8,21 @@ export default function DemoClassForLandingPage() {
       {/* <div className='text-center'>
             <h1 className='text-4xl lg:text-5xl text-[#4F4D74] px-6'>What are you looking for!</h1>
         </div> */}
-      <div className="flex flex-row items-center justify-between bg-[#EDD93C] max-w-[85vw] sm:max-w-[90vw] sm:min-w-[90vw] lg:min-w-[80vw] lg:max-w-[80vw] px-4 py-4 sm:px-12 sm:py-8 mt-6 rounded-3xl ">
-        <div className="w-[28rem]">
+      <div className="flex flex-row items-center justify-between bg-[#EDD93C] max-w-[85vw] sm:max-w-[90vw] sm:min-w-[90vw] lg:min-w-[85vw] lg:max-w-[85vw] px-4 py-4 sm:px-12 sm:py-4 mt-6 rounded-3xl ">
+        <div className="w-[32rem]">
           <Image
             src="/assets/images/say-hello.svg"
-            width={500}
-            height={500}
+            width={600}
+            height={600}
             alt="Picture of the author"
-          ></Image>
+          ></Image> 
         </div>
-        <button className="w-[22rem]">
+        <button className="w-[30rem]">
           <Link href="/components/contact-us">
             <Image
               src="/assets/images/book-free-demo-class.svg"
-              width={500}
-              height={500}
+              width={600}
+              height={600}
               alt="Picture of the author"
             ></Image>
           </Link>

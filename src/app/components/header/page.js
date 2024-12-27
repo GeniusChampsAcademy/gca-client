@@ -7,7 +7,10 @@ import { IoMenu, IoClose } from "react-icons/io5";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeNav, setActiveNav] = useState("Home");
-  const mobileMenuRef = useRef(null);
+  const [showStickyNav, setShowStickyNav] = useState(false);
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+
+  const lastScrollTop = useRef(0);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -15,7 +18,7 @@ export default function Header() {
 
   const handleNavClick = (navItem) => {
     setActiveNav(navItem);
-    setIsMenuOpen(false); // Closes menu on click for mobile
+    setIsMenuOpen(false);
   };
 
   const getLinkStyle = (navItem) =>
@@ -29,32 +32,44 @@ export default function Header() {
       : "bg-[#6173FD] text-white px-7 py-2 rounded-3xl ms-8 ring ring-[#E2EBF4]";
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        isMenuOpen &&
-        mobileMenuRef.current &&
-        !mobileMenuRef.current.contains(event.target)
-      ) {
-        setIsMenuOpen(false);
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      // Detect scrolling direction
+      if (scrollTop > lastScrollTop.current) {
+        // Scrolling down
+        setIsNavbarVisible(false);
+      } else {
+        // Scrolling up
+        setIsNavbarVisible(true);
       }
+
+      // Show sticky navbar after it completely hides
+      if (scrollTop > window.innerHeight * 0.3) {
+        setShowStickyNav(true);
+      } else {
+        setShowStickyNav(false);
+      }
+
+      lastScrollTop.current = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative scroll
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [isMenuOpen]);
-
-  const scrollToOurCourses = (e) => {
-    e.preventDefault(); // Prevents default link behavior
-    const ourCoursesSection = document.getElementById("our-courses");
-    if (ourCoursesSection) {
-      ourCoursesSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  }, []);
 
   return (
-    <header className="flex gap-12 sm:gap-40 sticky top-0 bg-white z-50 text-[#4F4D74] items-center w-full p-4 lg:px-20 justify-between lg:justify-center">
+    <header
+  className={`flex gap-12 sm:gap-40 fixed top-0 z-50 text-[#4F4D74] items-center w-full p-4 lg:px-20 justify-between lg:justify-center transition-transform duration-500 ${
+    showStickyNav
+      ? isNavbarVisible
+        ? "bg-white shadow-lg translate-y-0"
+        : "-translate-y-full"
+      : "bg-white"
+  }`}
+>
       <div className="flex items-center gap-4">
         <Link href="/">
           <Image
@@ -90,8 +105,12 @@ export default function Header() {
               href="#our-courses"
               className={getLinkStyle("Our Courses")}
               onClick={(e) => {
+                e.preventDefault();
+                const ourCoursesSection = document.getElementById("our-courses");
+                if (ourCoursesSection) {
+                  ourCoursesSection.scrollIntoView({ behavior: "smooth" });
+                }
                 handleNavClick("Our Courses");
-                scrollToOurCourses(e);
               }}
             >
               Our Courses
@@ -129,12 +148,8 @@ export default function Header() {
           </li>
         </ul>
 
-        <button
-          className={demoButtonStyle}
-          // onClick={() => handleNavClick("Book Free Demo")}
-          >
+        <button className={demoButtonStyle}>
           <Link href="/components/contact-us">BOOK FREE DEMO</Link>
-          
         </button>
       </nav>
 
@@ -172,8 +187,14 @@ export default function Header() {
                 href="#our-courses"
                 className={getLinkStyle("Our Courses")}
                 onClick={(e) => {
+                  e.preventDefault();
+                  const ourCoursesSection = document.getElementById(
+                    "our-courses"
+                  );
+                  if (ourCoursesSection) {
+                    ourCoursesSection.scrollIntoView({ behavior: "smooth" });
+                  }
                   handleNavClick("Our Courses");
-                  scrollToOurCourses(e);
                   setIsMenuOpen(false);
                 }}
               >

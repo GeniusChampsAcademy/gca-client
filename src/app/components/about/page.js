@@ -12,7 +12,7 @@ export default function About() {
           backgroundImage: "url('/assets/images/about-background.svg')",
         }}
       >
-        <div className="container flex flex-col lg:flex-row gap-4 sm:gap-16 lg:gap-11 mt-10 md:mt-16 p-4">
+        <div className="container flex flex-col lg:flex-row gap-4 sm:gap-16 lg:gap-1 mt-10 md:mt-16 p-4">
           <div className="w-full lg:w-[50%] flex justify-center mx-auto items-center">
             <Image
               src="/assets/images/about.png"
@@ -39,7 +39,13 @@ export default function About() {
               </div>
 
               <div className="flex flex-col gap-4">
-                <h1 className="flex justify-start text-4xl lg:text-5xl text-center md:text-left">
+                <h1
+                  className="flex justify-start text-4xl lg:text-5xl text-center md:text-left"
+                  style={{
+                    fontFamily: "Gilroy",
+                    fontWeight: 700, // bold
+                  }}
+                >
                   Who we are?
                 </h1>
                 <p className="text-sm md:text-base lg:text-lg text-justify whitespace-wrap lg:max-w-[40vw]">
@@ -96,7 +102,7 @@ export default function About() {
               </div>
 
               <div className="flex justify-start md:justify-start">
-                <button className="py-2 px-12 rounded-full bg-[#16C6EC] hover:bg-[#45d5f5] text-white">
+                <button className="py-2 px-8 rounded-full bg-[#16C6EC] hover:bg-[#45d5f5] text-white">
                   <Link href="/components/contact-us">KNOW MORE</Link>
                 </button>
               </div>

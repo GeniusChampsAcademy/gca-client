@@ -40,7 +40,7 @@ export default function ContactUsForm() {
     try {
       console.log(data);
       const response = await axios.post(
-        "https://gca-backend-xeyu.vercel.app/api/contact/",
+        process.env.EMAIL_ENDPOINT ,
         data
       );
       if (response.data.success) {

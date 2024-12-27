@@ -3,11 +3,36 @@ import "./globals.css";
 import Header from "./components/header/page.js";
 import Footer from "./components/footer/page.js";
 
+// const gilroyLight = localFont({
+//   src: "../../public/fonts/Gilroy-Light.ttf",
+//   variable: "--font-gilroy-light",
+//   weight: "300", // Light weight
+// });
+
+// const gilroyRegular = localFont({
+//   src: "../../public/fonts/Gilroy-Regular.ttf",
+//   variable: "--font-gilroy-regular",
+//   weight: "400", // Regular weight
+// });
+
 const gilroySemiBold = localFont({
   src: "../../public/fonts/Gilroy-SemiBold.ttf",
   variable: "--font-gilroy-semibold",
-  weight: "600", // Corrected to an array
+  weight: "600", // SemiBold weight
 });
+
+const gilroyBold = localFont({
+  src: "../../public/fonts/Gilroy-Bold.ttf",
+  variable: "--font-gilroy-bold",
+  weight: "700", // Bold weight
+});
+
+const gilroyextraBold = localFont({
+  src: "../../public/fonts/gilroy-extra-bold.ttf",
+  variable: "--font-gilroy-extra-bold",
+  weight: "800", // Extra Bold weight
+})
+
 
 export const metadata = {
   title: "Genius Champs Academy",
@@ -17,11 +42,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${gilroySemiBold.variable} antialiased`}>
-        <Header/>
+      <body className={`${gilroyextraBold.variable} antialiased`}>
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
 }
+

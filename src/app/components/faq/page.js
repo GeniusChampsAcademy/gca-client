@@ -17,7 +17,10 @@ const Faq = () => {
   return (
     <section className="max-w-[92vw] lg:max-w-[55vw] mx-auto mt-10 mb-0">
       <div className="text-center text-[#4F4D74] mb-10">
-        <h2 className="text-4xl lg:text-5xl">FAQ</h2>
+        <h2 className="text-4xl lg:text-5xl" style={{
+                    fontFamily: "Gilroy",
+                    fontWeight: 700, // bold
+                  }}>FAQ</h2>
         <p className="md:text-lg lg:text-lg">
           Feeling a little lost? No worries – we've got your back! Here's the
           lowdown on all your burning questions, so buckle up for some seriously
@@ -29,13 +32,16 @@ const Faq = () => {
         {faqData.map((item, index) => (
           <div
             key={index}
-            className="bg-[#6072FA] text-white border-[5px] border-[#E3ECF4]"
+            className="bg-[#6072FA] text-white border-[5px] border-[#E3ECF4] lg:text-xl"
           >
             <div
               className="flex justify-between items-center p-4 cursor-pointer"
               onClick={() => toggleFaq(index)}
             >
-              <h3 className="font-medium ml-10">{item.question}</h3>
+              <h3 className="font-medium ml-10" style={{
+                    fontFamily: "Gilroy",
+                    fontWeight: 700, // bold
+                  }}>{item.question}</h3>
 
               {/* Container for the Rectangle and Vector images */}
               <span className="relative w-[45px] h-auto rounded-full mr-3">

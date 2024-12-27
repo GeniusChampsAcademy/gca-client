@@ -5,7 +5,10 @@ export default function SuccessRate() {
   return (
     <div className="container flex flex-col items-center gap-5 mt-16">
       <div>
-        <p className="text-center text-4xl lg:text-5xl text-[#4F4D74]">
+        <p className="text-center text-4xl lg:text-5xl text-[#4F4D74]" style={{
+                    fontFamily: "Gilroy",
+                    fontWeight: 700, // bold
+                  }}>
           100% Success Rate
         </p>
       </div>

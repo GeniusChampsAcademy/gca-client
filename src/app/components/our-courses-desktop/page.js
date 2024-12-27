@@ -75,7 +75,10 @@ export default function OurCoursesDesktop() {
               height={500}
             />
 
-            <p className="text-base -mt-14 font-bold text-center">
+            <p className="text-base -mt-14 font-extrabold text-center" style={{
+                    fontFamily: "Gilroy",
+                    fontWeight: 800, // bold
+                  }}>
               {course.title}
             </p>
 

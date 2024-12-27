@@ -5,7 +5,10 @@ import Image from "next/image";
 export default function JoinUsNow() {
   return (
     <div className="container mb-80">
-      <div className="text-center text-4xl lg:text-5xl text-[#4F4D74]">
+      <div className="text-center text-4xl lg:text-5xl text-[#4F4D74]" style={{
+                    fontFamily: "Gilroy",
+                    fontWeight: 700, // bold
+                  }}>
         <h1>Join Us Now!</h1>
       </div>
 

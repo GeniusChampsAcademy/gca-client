@@ -3,7 +3,10 @@ import Image from "next/image";
 
 export default function Achievements() {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5 text-[#4F4D74] text-sm whitespace-nowrap justify-start lg:gap-2 my-10 mx-8">
+    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5 text-[#4F4D74] text-sm whitespace-nowrap justify-start lg:gap-2 my-10 mx-8" style={{
+      fontFamily: "Gilroy",
+      fontWeight: 700, // bold
+    }}>
       {/* Just Dial Achievement */}
       <div className="flex justify-center items-center gap-3">
         <Image

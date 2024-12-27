@@ -2,20 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Define Gilroy font with different weights (e.g., SemiBold, Regular) */
 @font-face {
   font-family: 'Gilroy';
-  src: url('../../public/fonts/Gilroy-SemiBold.ttf') format('truetype'); /* Use correct font path */
-  font-weight: 600; /* Use the appropriate weight for SemiBold */
+  src: url('../../public/fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600; /* SemiBold */
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../../public/fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../../public/fonts/gilroy-extra-bold.ttf') format('truetype');
+  font-weight: 800; /* ExtraBold */
+  font-style: normal;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
 }
 
 /* Applying Gilroy font across the website */
 :root {
-  font-family: 'Gilroy', sans-serif;
-}
-
-body {
   font-family: 'Gilroy', sans-serif;
 }
 

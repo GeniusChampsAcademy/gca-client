@@ -7,11 +7,14 @@ export default function GetInTouch() {
     <section className="max-w-[52rem] mx-auto py-10 px-5 my-7 text-[#4F4D74]">
       {/* Title */}
       <div className="text-center mb-10">
-        <h2 className="text-4xl lg:text-5xl">Get in Touch</h2>
+        <h2 className="text-4xl lg:text-5xl" style={{
+                    fontFamily: "Gilroy",
+                    fontWeight: 700, // bold
+                  }}>Get in Touch</h2>
       </div>
 
       {/* Info Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:text-lg">
         {/* Contact Number Card */}
         <div className="bg-white rounded-2xl p-4 text-start border-[3px] border-[#E2EBF4]">
           <div className="flex justify-start mb-4 relative">

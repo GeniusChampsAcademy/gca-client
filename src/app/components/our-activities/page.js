@@ -171,7 +171,10 @@ export default function OurActivities() {
           width={500}
           height={500}
         />
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl text-[#4F4D74] font-extrabold">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl text-[#4F4D74] font-extrabold" style={{
+                    fontFamily: "Gilroy",
+                    fontWeight: 700, // bold
+                  }}>
           Our Activities
         </h2>
       </div>
