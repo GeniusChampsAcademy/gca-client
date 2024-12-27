@@ -11,6 +11,7 @@ export default function Header() {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
 
   const lastScrollTop = useRef(0);
+  const mobileMenuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -35,23 +36,19 @@ export default function Header() {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-      // Detect scrolling direction
       if (scrollTop > lastScrollTop.current) {
-        // Scrolling down
         setIsNavbarVisible(false);
       } else {
-        // Scrolling up
         setIsNavbarVisible(true);
       }
 
-      // Show sticky navbar after it completely hides
       if (scrollTop > window.innerHeight * 0.3) {
         setShowStickyNav(true);
       } else {
         setShowStickyNav(false);
       }
 
-      lastScrollTop.current = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative scroll
+      lastScrollTop.current = scrollTop <= 0 ? 0 : scrollTop;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -62,14 +59,14 @@ export default function Header() {
 
   return (
     <header
-  className={`flex gap-12 sm:gap-40 fixed top-0 z-50 text-[#4F4D74] items-center w-full p-4 lg:px-20 justify-between lg:justify-center transition-transform duration-500 ${
-    showStickyNav
-      ? isNavbarVisible
-        ? "bg-white shadow-lg translate-y-0"
-        : "-translate-y-full"
-      : "bg-white"
-  }`}
->
+      className={`flex gap-12 sm:gap-40 fixed top-0 z-50 text-[#4F4D74] items-center w-full p-4 lg:px-20 justify-between lg:justify-center transition-transform duration-500 ${
+        showStickyNav
+          ? isNavbarVisible
+            ? "bg-white shadow-lg translate-y-0"
+            : "-translate-y-full"
+          : "bg-white"
+      }`}
+    >
       <div className="flex items-center gap-4">
         <Link href="/">
           <Image
@@ -167,17 +164,14 @@ export default function Header() {
       {isMenuOpen && (
         <div
           ref={mobileMenuRef}
-          className="absolute top-10 left-0 w-full bg-white lg:hidden mt-8 z-50"
+          className="absolute top-full left-0 w-full bg-white lg:hidden mt-8 z-50"
         >
           <ul className="flex flex-col items-center gap-4 py-4">
             <li>
               <Link
                 href="/"
                 className="hover:text-blue-600"
-                onClick={() => {
-                  handleNavClick("Home");
-                  setIsMenuOpen(false);
-                }}
+                onClick={() => handleNavClick("Home")}
               >
                 Home
               </Link>
@@ -185,7 +179,7 @@ export default function Header() {
             <li>
               <Link
                 href="#our-courses"
-                className={getLinkStyle("Our Courses")}
+                className="hover:text-blue-600"
                 onClick={(e) => {
                   e.preventDefault();
                   const ourCoursesSection = document.getElementById(
@@ -195,7 +189,6 @@ export default function Header() {
                     ourCoursesSection.scrollIntoView({ behavior: "smooth" });
                   }
                   handleNavClick("Our Courses");
-                  setIsMenuOpen(false);
                 }}
               >
                 Our Courses
@@ -205,7 +198,7 @@ export default function Header() {
               <Link
                 href="https://www.appadmin.geniuschampsacademy.com/gcaexam/examlogin.html"
                 className="hover:text-blue-600"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => handleNavClick("Exam Portal")}
               >
                 Exam Portal
               </Link>
@@ -214,7 +207,7 @@ export default function Header() {
               <Link
                 href="https://www.geniuschampsacademy.com/franchise.php"
                 className="hover:text-blue-600"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => handleNavClick("Join Our Team")}
               >
                 Join Our Team
               </Link>
