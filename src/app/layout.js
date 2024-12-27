@@ -22,7 +22,7 @@ const gilroySemiBold = localFont({
 });
 
 const gilroyBold = localFont({
-  src: "../../public/fonts/Gilroy-Bold.ttf",
+  src: "../../public/fonts/gilroy-bold.ttf",
   variable: "--font-gilroy-bold",
   weight: "700", // Bold weight
 });
