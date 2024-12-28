@@ -55,7 +55,10 @@ export default function JoinUsNow() {
           <div className="card-three bg-[#17C7EE] h-[55vh] lg:w-2/3 border-8 border-[#f9f9fa] rounded-3xl drop-shadow-2xl">
             <div className="mx-6 min-h-[98%] bg-no-repeat flex justify-center">
               <div className="flex flex-col justify-center items-center md:relative md:top-14 md:left-2">
-                <h1 className="mb-6 text-3xl whitespace-nowrap z-10 md:relative md:-left-40">
+                <h1 className="mb-6 text-3xl whitespace-nowrap z-10 md:relative md:-left-40" style={{
+                    fontFamily: "Gilroy",
+                    fontWeight: 700, // bold
+                  }}>
                   Exam Portal
                 </h1>
 
