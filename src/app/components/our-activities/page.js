@@ -70,7 +70,7 @@ export default function OurActivities() {
         return (
           <div className="flex justify-center items-center w-full h-full">
             <iframe
-              className="w-full h-[13rem] min-w-[80vw] max-w-[35rem] sm:h-72 sm:min-w-[35rem] sm:max-w-md md:min-w-[35rem] lg:max-w-xl rounded-xl border-4 border-white drop-shadow-2xl"
+              className="w-full h-[13rem] min-w-[80vw] max-w-[35rem] sm:h-[24rem] sm:min-w-[35rem] sm:max-w-md md:min-w-[35rem] lg:max-w-3xl rounded-xl border-4 border-white drop-shadow-2xl"
               src={embedUrl}
               title="YouTube video player"
               frameBorder="0"
@@ -83,7 +83,7 @@ export default function OurActivities() {
         return (
           <div className="flex justify-center items-center w-full h-full">
             <iframe
-              className="w-full h-[13rem] min-w-[80vw] max-w-[35rem] sm:h-72 sm:min-w-[35rem] sm:max-w-md md:min-w-[35rem] lg:max-w-xl rounded-xl border-4 border-white drop-shadow-2xl"
+              className="w-full h-[13rem] min-w-[80vw] max-w-[35rem] sm:h-[24rem] sm:min-w-[35rem] sm:max-w-md md:min-w-[35rem] lg:max-w-3xl rounded-xl border-4 border-white drop-shadow-2xl"
               src="https://www.youtube.com/embed/suVseOqBIZs?si=iz4J6tBgtgyNY1DQ"
               title="YouTube video player"
               frameBorder="0"
@@ -97,7 +97,7 @@ export default function OurActivities() {
         return (
           <div className="flex justify-center items-center w-full h-full">
             <iframe
-              className="w-full h-[13rem] min-w-[80vw] max-w-[35rem] sm:h-72 sm:min-w-[35rem] sm:max-w-md md:min-w-[35rem] lg:max-w-xl rounded-xl border-4 border-white drop-shadow-2xl"
+              className="w-full h-[13rem] min-w-[80vw] max-w-[35rem] sm:h-[24rem] sm:min-w-[35rem] sm:max-w-md md:min-w-[35rem] lg:max-w-3xl rounded-xl border-4 border-white drop-shadow-2xl"
               src="https://www.youtube.com/embed/R03RroVowqY?si=9grzy0FtVOFySG1_"
               title="YouTube video player"
               frameBorder="0"
@@ -109,7 +109,7 @@ export default function OurActivities() {
         );
       case "photoGallery":
         return (
-          <div className="flex justify-center items-center max-w-[45rem] flex-wrap overflow-y-scroll max-h-72 ">
+          <div className="flex justify-center items-center max-w-[45rem] flex-wrap overflow-y-scroll max-h-[25rem] lg:ms-6 ">
             <div className="grid grid-cols-2 gap-5 lg:grid-cols-4 max-w-6xl mx-auto">
               {galleryImages.map((img, index) => (
                 <Image
@@ -179,17 +179,17 @@ export default function OurActivities() {
         </h2>
       </div>
 
-      <div className="flex flex-col items-center lg:items-start lg:flex-row text-sm sm:text-lg lg:text-xl text-[#4F4D74] font-extrabold mt-5">
+      <div className="flex flex-col items-center lg:items-start lg:flex-row text-sm sm:text-lg lg:text-2xl text-[#4F4D74] font-semibold mt-5">
         <div className="p-4">
-          <ul className="flex flex-col gap-3 lg:gap-8">
+          <ul className="flex flex-col gap-3 lg:gap-[4rem]">
             {["youtube", "ourChamps", "achievements", "photoGallery"].map(
               (tab) => (
                 <li
                   key={tab}
                   onClick={() => setSelectedTab(tab)}
-                  className={`cursor-pointer px-4 py-2 text-center ${
+                  className={`cursor-pointer px-4 py-2 text-left ${
                     selectedTab === tab
-                      ? "font-bold border-4 border-y-0 border-r-0 border-l-[#EDA63C] bg-[#E2EBF4]"
+                      ? "border-4 border-y-0 border-r-0 border-l-[#EDA63C] bg-[#E2EBF4]"
                       : ""
                   }`}
                 >

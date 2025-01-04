@@ -75,7 +75,7 @@ export default function Reviews() {
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="flex flex-row items-center gap-6 w-full p-4"
+            className="flex flex-row items-center gap-6 w-full p-4 lg:py-0"
           >
             <div className="md:float-left w-36 h-36 bg-[#FFCD1A] rounded-full border-4 border-white flex-shrink-0 overflow-hidden mx-auto md:mx-0">
               <Image
@@ -93,7 +93,7 @@ export default function Reviews() {
                 <div className="flex flex-col float-start items-center md:items-start justify-center md:justify-start ">
                   {" "}
                   {/* Reduced gap for better layout */}
-                  <p className="text-xl font-semibold whitespace-nowrap">
+                  <p className="text-xl font-semibold whitespace-nowrap lg:text-2xl">
                     {review.name}
                   </p>
                   <Image
@@ -104,13 +104,15 @@ export default function Reviews() {
                     height={500}
                   />{" "}
                 </div>
+                <div className="text-sm sm:text-base">
                 {review.review}
+                </div>
               </div>
             </div>
           </div>
         ))}
       </Slider>
-      <div className="absolute bottom-3 right-3 lg:bottom-6 lg:right-9 flex gap-2">
+      <div className="flex  gap-2 absolute bottom-3 md:right-3 lg:bottom-6 lg:right-9">
         <button
           className="w-8 h-8 text-white bg-[#ffffff59] border-white border-2 rounded-full flex items-center justify-center shadow-lg"
           onClick={previous}

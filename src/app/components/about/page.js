@@ -7,13 +7,13 @@ export default function About() {
   return (
     <div>
       <div
-        className="min-h-[130vh] bg-no-repeat flex md:pb-[5rem] bg-center mt-16"
+        className="min-h-[850px] bg-no-repeat flex md:pb-[5rem] bg-center mt-16 justify-center items-center"
         style={{
           backgroundImage: "url('/assets/images/about-background.svg')",
         }}
       >
-        <div className="container flex flex-col lg:flex-row gap-4 sm:gap-16 lg:gap-1 mt-10 md:mt-16 p-4">
-          <div className="w-full lg:w-[50%] flex justify-center mx-auto items-center">
+        <div className="container h-full flex flex-col lg:flex-row gap-4 mt-10 md:mt-16 p-4">
+          <div className="w-full lg:w-[28rem] flex justify-center mx-auto items-center lg:-mt-7">
             <Image
               src="/assets/images/about.png"
               alt="about image"
@@ -23,7 +23,7 @@ export default function About() {
             />
           </div>
 
-          <div className="mt-10 md:mt-0 w-full lg:w-[50%] mx-auto flex items-center">
+          <div className="mt-10 md:mt-0 w-full lg:w-[34rem] mx-auto flex items-center">
             <div className="text-[#4F4D74] flex flex-col gap-8 lg:gap-12">
               <div className="flex flex-row md:flex-row gap-5 items-center">
                 <Image

@@ -75,7 +75,7 @@ export default function OurCoursesDesktop() {
               height={500}
             />
 
-            <p className="text-base -mt-14 font-extrabold text-center" style={{
+            <p className="text-base -mt-14 font-extrabold text-center mb-2" style={{
                     fontFamily: "Gilroy",
                     fontWeight: 800, // bold
                   }}>
@@ -83,7 +83,7 @@ export default function OurCoursesDesktop() {
             </p>
 
             {activeSlide === index && (
-              <div className="mb-8">
+              <div className="">
                 <p className="text-xs text-center">{course.description}</p>
                 <button className="mt-4 px-4 py-1 text-xs bg-[#16C6EC] text-white rounded-full">
                   <Link href="/components/contact-us">KNOW MORE</Link>
@@ -94,7 +94,7 @@ export default function OurCoursesDesktop() {
         ))}
       </Slider>
 
-      <div className="flex flex-row justify-center gap-7 -mt-[5px] lg:-mt-[90px] xl:-mt-[1px]">
+      <div className="flex flex-row justify-center gap-7 -mt-[5px] lg:mt-[30px] xl:-mt-[280px] 2xl:-mt-[350px]">
         {/* Left Arrow */}
         <button
           className="previous drop-shadow-2xl p-3 bg-white rounded-full"

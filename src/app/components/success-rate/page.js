@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function SuccessRate() {
   return (
-    <div className="container flex flex-col items-center gap-5 mt-16">
+    <div className="container flex flex-col items-center gap-5 mt-16 mb-[144px]">
       <div>
-        <p className="text-center text-4xl lg:text-5xl text-[#4F4D74]" style={{
+        <p className="text-center text-4xl lg:text-5xl text-[#4F4D74] mb-5" style={{
                     fontFamily: "Gilroy",
                     fontWeight: 700, // bold
                   }}>
