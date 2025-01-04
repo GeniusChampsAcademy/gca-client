@@ -66,45 +66,40 @@ export default function Reviews() {
   ];
 
   return (
-    <div className="relative top-32 border-4 sm:max-h-[16.5rem] border-white flex items-center justify-center py-8 px-5 mx-auto max-w-[90vw] md:max-w-[78vw] bg-[#FF7A73] text-white rounded-2xl">
+    <div className="relative top-32 border-4 sm:max-h-[16.5rem] border-white flex items-center justify-center py-8 px-5 mx-auto max-w-[90vw] md:max-w-[78vw] lg:max-h-[11rem] lg:max-w-[70vw] bg-[#FF7A73] text-white rounded-3xl">
       <Slider
         ref={sliderRef}
         {...settings}
         className="overflow-hidden relative w-full"
       >
         {reviews.map((review, index) => (
-          <div
-            key={index}
-            className="flex flex-row items-center gap-6 w-full p-4"
-          >
-            <div className="md:float-left w-36 h-36 bg-[#FFCD1A] rounded-full border-4 border-white flex-shrink-0 overflow-hidden mx-auto md:mx-0">
-              <Image
-                src={review.avatar}
-                alt="avatar"
-                className="w-full h-full p-1 object-cover"
-                width={500}
-                height={500}
-              />
-            </div>
-            <div className="flex flex-col flex-1 items-center justify-start md:ps-8">
-              <div className="flex flex-col text-sm leading-relaxed text-center mt-2 md:text-justify">
-                {" "}
-                {/* Flex-1 for content */}
-                <div className="flex flex-col float-start items-center md:items-start justify-center md:justify-start ">
+          <div>
+             
+            <div
+              key={index}
+              className="relative flex flex-row items-center gap-6 w-full p-4"
+            >
+             
+              <div className="flex flex-col flex-1 items-center justify-start">
+                <div className="flex flex-col text-sm leading-relaxed text-center mt-2 md:text-justify">
                   {" "}
-                  {/* Reduced gap for better layout */}
-                  <p className="text-xl font-semibold whitespace-nowrap">
-                    {review.name}
-                  </p>
-                  <Image
-                    src={review.stars}
-                    alt="stars"
-                    className="w-28"
-                    width={500}
-                    height={500}
-                  />{" "}
+                  {/* Flex-1 for content */}
+                  <div className="flex flex-row float-start items-center md:items-start justify-center md:justify-start gap-6">
+                    {" "}
+                    {/* Reduced gap for better layout */}
+                    <p className="text-xl font-semibold whitespace-nowrap ">
+                      {review.name}
+                    </p>
+                    <Image
+                      src={review.stars}
+                      alt="stars"
+                      className="w-36"
+                      width={500}
+                      height={500}
+                    />{" "}
+                  </div>
+                  {review.review}
                 </div>
-                {review.review}
               </div>
             </div>
           </div>
