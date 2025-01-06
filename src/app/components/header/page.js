@@ -164,7 +164,7 @@ export default function Header() {
       {isMenuOpen && (
         <div
           ref={mobileMenuRef}
-          className="absolute top-full left-0 w-full bg-white lg:hidden mt-8 z-50"
+          className="absolute top-full left-0 w-full bg-white lg:hidden z-50"
         >
           <ul className="flex flex-col items-center gap-4 py-4">
             <li>
