@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-links">
-            <ul className="flex flex-col md:flex-row gap-3 lg:gap-16">
+            <ul className="flex flex-col md:flex-row gap-3 lg:gap-16 xl:gap-[4.5rem]">
               <li className="first-list-item">
                 <Link href="/">Home</Link>
               </li>
