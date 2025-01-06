@@ -23,7 +23,7 @@ export default function Achievements() {
       </div>
 
       {/* ABP Maza Interview */}
-      <div className="flex justify-center items-center gap-3 lg:ms-16">
+      <div className="flex justify-center items-center gap-3 xl:ms-16">
         <Image
           className="w-[2.5rem] lg:w-[3rem] h-auto"
           src="/assets/images/abp.svg"
@@ -38,7 +38,7 @@ export default function Achievements() {
       </div>
 
       {/* MCED Certification */}
-      <div className="flex justify-center items-center gap-3 -mr-20">
+      <div className="flex justify-center items-center gap-3 xl:-mr-20">
         <Image
           className="w-[2.5rem] lg:w-[3rem] h-auto"
           src="/assets/images/mced.svg"

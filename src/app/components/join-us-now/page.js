@@ -41,7 +41,7 @@ export default function JoinUsNow() {
         </div>
 
         <div className="card-two-three-root flex flex-col lg:flex-row gap-10">
-          <div className="card-two flex flex-col h-[55vh] lg:w-1/3 gap-7 bg-[#74D997] py-16 px-24 border-8 border-[#f9f9fa] justify-center items-center rounded-3xl drop-shadow-2xl">
+          <div className="card-two flex flex-col h-[22rem] lg:w-1/3 gap-7 bg-[#74D997] py-16 px-24 border-8 border-[#f9f9fa] justify-center items-center rounded-3xl drop-shadow-2xl">
             <div className="text-white text-4xl font-extrabold whitespace-nowrap">
               <h1 className="text-3xl">
                 Book Demo <br /> Class Now
@@ -52,7 +52,7 @@ export default function JoinUsNow() {
             </button>
           </div>
 
-          <div className="card-three bg-[#17C7EE] h-[55vh] lg:w-2/3 border-8 border-[#f9f9fa] rounded-3xl drop-shadow-2xl">
+          <div className="card-three bg-[#17C7EE] h-[22rem] lg:w-2/3 border-8 border-[#f9f9fa] rounded-3xl drop-shadow-2xl">
             <div className="mx-6 min-h-[98%] bg-no-repeat flex justify-center">
               <div className="flex flex-col justify-center items-center md:relative md:top-14 md:left-2">
                 <h1 className="mb-6 text-3xl whitespace-nowrap z-10 md:relative md:-left-40" style={{

@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './our-courses-desktop.css'
 
 export default function OurCoursesDesktop() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -63,7 +64,7 @@ export default function OurCoursesDesktop() {
         {courses.map((course, index) => (
           <div
             key={index}
-            className={`flex flex-col mt-9 lg:-mt-3 p-4  text-center transition-all duration-300 ease-in-out ${
+            className={`min-h-[30rem] flex flex-col mt-9 p-4  text-center transition-all duration-300 ease-in-out ${
               activeSlide === index ? "scale-150" : "scale-110"
             }`}
           >
@@ -94,7 +95,7 @@ export default function OurCoursesDesktop() {
         ))}
       </Slider>
 
-      <div className="flex flex-row justify-center gap-7 -mt-[5px] lg:mt-[30px] xl:-mt-[280px] 2xl:-mt-[350px]">
+      <div className="flex flex-row justify-center gap-7 -mt-[5px] lg:mt-[30px] xl:-mt-[280px] 2xl:-mt-[350px] top-margin">
         {/* Left Arrow */}
         <button
           className="previous drop-shadow-2xl p-3 bg-white rounded-full"
