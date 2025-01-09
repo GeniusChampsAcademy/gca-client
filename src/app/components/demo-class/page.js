@@ -10,7 +10,7 @@ export default function DemoClass() {
         }
       };
   return (
-    <div className="flex justify-center flex-col items-center mt-32">
+    <div className="flex justify-center flex-col items-center mt-40">
       <div className="text-center">
         <p className="text-xl text-[#A7B0B8]">Contact Us</p>
         <h1 className="text-4xl lg:text-7xl text-[#4F4D74] px-6" style={{

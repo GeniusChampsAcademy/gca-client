@@ -14,10 +14,10 @@ export default function Footer() {
   };
   return (
     <footer className="mt-10">
-      <div className="top-footer bg-[#6173FD] max-w-[100vw] mt-10 text-white">
+      <div className="top-footer bg-[#6173FD] max-w-[100vw] mt-10 text-white pt-11">
         <div className="max-w-[60vw] ms-3 md:ps-36 pt-24">
           <div className="flex flex-row justify-between items-center py-6">
-            <div className="bg-white p-2 rounded-md">
+            <div className="bg-white p-2 rounded-md lg:mb-5">
               <Image
                 src="/assets/images/gca-logo.svg"
                 alt="footer-logo"
