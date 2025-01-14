@@ -10,7 +10,7 @@ export default function Hero() {
         alt="Hero text that says 'We Spark Your Thinking'" 
         width={500} 
         height={600}
-        className="absolute z-30 mt-12 top-32 sm:mb-0 lg:text-8xl max-w-[86vw] sm:max-w-max lg:min-w-[40rem]"
+        className="absolute z-30 mt-4 top-32 sm:mb-0 lg:text-8xl max-w-[86vw] sm:max-w-max lg:min-w-[40rem]"
         priority
       />
 

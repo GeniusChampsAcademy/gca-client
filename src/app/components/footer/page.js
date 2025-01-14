@@ -21,20 +21,21 @@ export default function Footer() {
               <Image
                 src="/assets/images/gca-logo.svg"
                 alt="footer-logo"
-                className="w-16"
+                className="w-20"
                 width={500}
                 height={500}
               />
             </div>
 
             {/* social media links for desktop */}
-            <div className="social-media md:flex flex-row hidden ">
+            <div className="social-media md:flex flex-row hidden">
               <Link href="https://www.facebook.com/geniuschampsacademy">
                 <Image
                   src="/assets/images/facebook.svg"
                   alt="facebook"
                   width={80}
                   height={80}
+                  className="w-24"
                 />
               </Link>
               <Link
@@ -46,6 +47,7 @@ export default function Footer() {
                   alt="instagram"
                   width={80}
                   height={80}
+                  className="w-24"
                 />
               </Link>
               <Link
@@ -57,6 +59,7 @@ export default function Footer() {
                   alt="linkedin"
                   width={80}
                   height={80}
+                  className="w-24"
                 />
               </Link>
               <Link href="https://youtube.com/@geniuschampsacademy">
@@ -65,6 +68,7 @@ export default function Footer() {
                   alt="youtube"
                   width={80}
                   height={80}
+                  className="w-24"
                 />
               </Link>
             </div>
