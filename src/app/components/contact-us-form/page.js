@@ -6,6 +6,7 @@ import Image from "next/image";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import "./contact-us-form.css";
+// require('dotenv').config()
 
 export default function ContactUsForm() {
   const {
@@ -36,13 +37,14 @@ export default function ContactUsForm() {
 
   const onSubmit = async (data) => {
     setLoading(true);
-    data.service = selectedService.current; // Add the selected service to form data
+    data.service = selectedService.current; 
     try {
       console.log(data);
       const response = await axios.post(
-        process.env.EMAIL_ENDPOINT ,
+        process.env.NEXT_PUBLIC_EMAIL_ENDPOINT ,
         data
       );
+
       if (response.data.success) {
         toast.success("Form submitted successfully!", {
           position: "top-right",
@@ -62,15 +64,15 @@ export default function ContactUsForm() {
   };
 
   return (
-    <div id="contact-us-form" className="max-w-3xl mx-auto mt-10 p-5 text-[#4F4D74]">
+    <div
+      id="contact-us-form"
+      className="max-w-3xl mx-auto mt-10 p-5 text-[#4F4D74]"
+    >
       <ToastContainer />
       <form className="p-4 space-y-6" onSubmit={handleSubmit(onSubmit)}>
         {/* Name Field */}
         <div>
-          <label
-            htmlFor="name"
-            className="block font-medium"
-          >
+          <label htmlFor="name" className="block font-medium">
             Name<span className="star">*</span>
           </label>
           <input
@@ -135,10 +137,7 @@ export default function ContactUsForm() {
 
         {/* Services Dropdown */}
         <div ref={dropdownRef} className="relative">
-          <label
-            htmlFor="service"
-            className="block font-medium service"
-          >
+          <label htmlFor="service" className="block font-medium service">
             Service<span className="star">*</span>
           </label>
           <button
