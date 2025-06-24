@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/header/page.js";
 import Footer from "./components/footer/page.js";
+import Image from "next/image";
 
 // const gilroyLight = localFont({
 //   src: "../../public/fonts/Gilroy-Light.ttf",
@@ -46,6 +47,28 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+
+         {/* WhatsApp Floating Button */}
+        <a
+          href="https://wa.me/917972434489"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            zIndex: 9999,
+          }}
+        >
+          <Image
+            src="/assets/images/whats-app-logo.webp"
+            alt="WhatsApp"
+            width={60}
+            height={60}
+            style={{ borderRadius: "50%", boxShadow: "0 0 10px rgba(0,0,0,0.2)" }}
+          >
+            </Image>
+        </a>
       </body>
     </html>
   );
