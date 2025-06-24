@@ -11,7 +11,7 @@ export default function DemoClassForLandingPage() {
       <div className="flex flex-row items-center justify-between bg-[#EDD93C] max-w-[85vw] sm:max-w-[90vw] sm:min-w-[90vw] lg:min-w-[85vw] lg:max-w-[85vw] px-4 py-4 sm:px-12 sm:py-4 mt-6 rounded-3xl ">
         <div className="w-[32rem]">
           <Image
-            src="/assets/images/say-hello.svg"
+            src="/assets/images/say-hello.png"
             width={600}
             height={600}
             alt="Picture of the author"
