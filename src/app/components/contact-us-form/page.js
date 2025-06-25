@@ -41,7 +41,7 @@ export default function ContactUsForm() {
     try {
       console.log(data);
       const response = await axios.post(
-        process.env.NEXT_PUBLIC_EMAIL_ENDPOINT ,
+        "https://gca-server-puce.vercel.app/api/contact" ,
         data
       );
 
