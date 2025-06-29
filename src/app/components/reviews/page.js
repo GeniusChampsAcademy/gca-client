@@ -42,6 +42,34 @@ export default function Reviews() {
         "This tuition has transformed my understanding of math! The tutor explained complex concepts in a simple way, making it easier to grasp.",
     },
     {
+      name: "Prabuddha Khaire",
+      avatar: "/assets/images/boy-avatar.svg",
+      stars: "/assets/images/stars.svg",
+      review:
+        "An result oriented academy with 100% success rate! Highli recommended for school kids to sharpen the mind and get ready for the competition!.",
+    },
+    {
+      name: "Sonu Maske",
+      avatar: "/assets/images/boy-avatar.svg",
+      stars: "/assets/images/stars.svg",
+      review:
+        "I can see my daughter's progress in math in Genius Champs Academy.The abacus method has made complex calculations much easier for her. Thank you.",
+    },
+    {
+      name: "Sangita Charbhe",
+      avatar: "/assets/images/boy-avatar.svg",
+      stars: "/assets/images/stars.svg",
+      review:
+        "My kids are happy with abacus sessions which are held at GCA. Very good learning environment for kids!.",
+    },
+    {
+      name: "Pritamsingh Kodape",
+      avatar: "/assets/images/boy-avatar.svg",
+      stars: "/assets/images/stars.svg",
+      review:
+        "I can see my daughter's progress in math in Genius Champs Academy.The abacus method has made complex calculations much easier for her. Thank you.",
+    },
+    {
       name: "Kishor Navsupe",
       avatar: "/assets/images/boy-avatar.svg",
       stars: "/assets/images/stars.svg",
@@ -61,6 +89,20 @@ export default function Reviews() {
       stars: "/assets/images/stars.svg",
       review:
         "This tuition has been great for my preparation for exams. The study materials provided are top-notch, and the guidance is invaluable.",
+    },
+    {
+      name: "Ahana Yadav",
+      avatar: "/assets/images/boy-avatar.svg",
+      stars: "/assets/images/stars.svg",
+      review:
+        "Very good academy ! Classes are filled with fun n learnings! Thanks Jayashree Mam for guidance!.",
+    },
+    {
+      name: "Sapana Gawali",
+      avatar: "/assets/images/boy-avatar.svg",
+      stars: "/assets/images/stars.svg",
+      review:
+        "My child concentration enhance as well as our kids doing yoga meditation .Nice academy..",
     },
     // Add more reviews if needed
   ];

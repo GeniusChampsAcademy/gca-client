@@ -136,7 +136,7 @@ export default function Header() {
           />
           <li>
             <Link
-              href="https://www.geniuschampsacademy.com/franchise.php"
+              href="/components/contact-us"
               className={getLinkStyle("Join Our Team")}
               onClick={() => handleNavClick("Join Our Team")}
             >

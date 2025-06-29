@@ -62,7 +62,7 @@ export default function Footer() {
                   className="w-24"
                 />
               </Link>
-              <Link href="https://youtube.com/@geniuschampsacademy">
+              <Link href="https://www.youtube.com/@geniuschampsacademypvt.ltd4177">
                 <Image
                   src="/assets/images/youtube.svg"
                   alt="youtube"
@@ -135,7 +135,7 @@ export default function Footer() {
                 height={80}
               />
             </Link>
-            <Link href="https://youtube.com/@geniuschampsacademy">
+            <Link href="https://www.youtube.com/@geniuschampsacademypvt.ltd4177">
               <Image
                 src="/assets/images/youtube.svg"
                 alt="youtube"
