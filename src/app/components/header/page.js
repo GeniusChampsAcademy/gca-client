@@ -205,7 +205,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="https://www.geniuschampsacademy.com/franchise.php"
+                href="/components/contact-us"
                 className="hover:text-blue-600"
                 onClick={() => handleNavClick("Join Our Team")}
               >
